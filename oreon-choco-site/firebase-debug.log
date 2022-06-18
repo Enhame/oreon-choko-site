@@ -1,0 +1,337 @@
+[debug] [2022-06-18T19:58:58.505Z] ----------------------------------------------------------------------
+[debug] [2022-06-18T19:58:58.507Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-06-18T19:58:58.507Z] CLI Version:   11.1.0
+[debug] [2022-06-18T19:58:58.507Z] Platform:      darwin
+[debug] [2022-06-18T19:58:58.507Z] Node Version:  v16.15.0
+[debug] [2022-06-18T19:58:58.509Z] Time:          Sat Jun 18 2022 23:58:58 GMT+0400 (GMT+04:00)
+[debug] [2022-06-18T19:58:58.510Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-18T19:58:58.515Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-18T19:58:58.515Z] > authorizing via signed-in user (enhamemail@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mikhailkuznetsov/oreon-choko-site/oreon-choco-site
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-06-18T19:59:05.172Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-06-18T19:59:05.874Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-06-18T19:59:05.874Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project oreon-choco-site (oreon-choco-site) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-06-18T19:59:08.250Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-06-18T19:59:09.274Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firebasedatabase.googleapis.com 200
+[debug] [2022-06-18T19:59:09.275Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firebasedatabase.googleapis.com [omitted]
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-06-18T19:59:09.276Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/oreon-choco-site/locations/-/instances/oreon-choco-site-default-rtdb [none]
+[debug] [2022-06-18T19:59:09.615Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/oreon-choco-site/locations/-/instances/oreon-choco-site-default-rtdb 200
+[debug] [2022-06-18T19:59:09.615Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/oreon-choco-site/locations/-/instances/oreon-choco-site-default-rtdb {"name":"projects/1045344715860/locations/europe-west1/instances/oreon-choco-site-default-rtdb","project":"projects/1045344715860","databaseUrl":"https://oreon-choco-site-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-06-18T19:59:16.811Z] >>> [apiv2][query] GET https://oreon-choco-site-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2022-06-18T19:59:17.104Z] <<< [apiv2][status] GET https://oreon-choco-site-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2022-06-18T19:59:17.104Z] <<< [apiv2][body] GET https://oreon-choco-site-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] ✔  Database Rules for oreon-choco-site-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2022-06-18T19:59:17.107Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firestore.googleapis.com [none]
+[debug] [2022-06-18T19:59:18.095Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firestore.googleapis.com 200
+[debug] [2022-06-18T19:59:18.095Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firestore.googleapis.com [omitted]
+[debug] [2022-06-18T19:59:18.096Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/oreon-choco-site [none]
+[debug] [2022-06-18T19:59:18.614Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/oreon-choco-site 200
+[debug] [2022-06-18T19:59:18.614Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/oreon-choco-site {"name":"apps/oreon-choco-site","id":"oreon-choco-site","authDomain":"gmail.com","locationId":"europe-west3","codeBucket":"staging.oreon-choco-site.appspot.com","servingStatus":"SERVING","defaultHostname":"oreon-choco-site.ey.r.appspot.com","defaultBucket":"oreon-choco-site.appspot.com","serviceAccount":"oreon-choco-site@appspot.gserviceaccount.com","gcrDomain":"eu.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-06-18T19:59:18.614Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-06-18T19:59:18.615Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-18T19:59:18.615Z] > authorizing via signed-in user (enhamemail@gmail.com)
+[debug] [2022-06-18T19:59:18.615Z] [iam] checking project oreon-choco-site for permissions ["firebase.projects.get"]
+[debug] [2022-06-18T19:59:18.615Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions [none]
+[debug] [2022-06-18T19:59:18.615Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-18T19:59:19.585Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions 200
+[debug] [2022-06-18T19:59:19.585Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-06-18T19:59:24.972Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/releases pageSize=10&pageToken=
+[debug] [2022-06-18T19:59:25.911Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/releases 200
+[debug] [2022-06-18T19:59:25.912Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/releases {"releases":[{"name":"projects/oreon-choco-site/releases/cloud.firestore","rulesetName":"projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc","createTime":"2022-06-18T19:58:45.914666Z","updateTime":"2022-06-18T19:58:45.914666Z"}]}
+[debug] [2022-06-18T19:59:25.912Z] Found ruleset: projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc
+[debug] [2022-06-18T19:59:25.912Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc [none]
+[debug] [2022-06-18T19:59:26.797Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc 200
+[debug] [2022-06-18T19:59:26.797Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-06-18T19:59:31.881Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-06-18T19:59:31.882Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false [none]
+[debug] [2022-06-18T19:59:32.379Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false 200
+[debug] [2022-06-18T19:59:32.379Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false {"fields":[{"name":"projects/oreon-choco-site/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2022-06-18T19:59:32.380Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-06-18T19:59:32.380Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2022-06-18T19:59:32.381Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-18T19:59:32.381Z] > authorizing via signed-in user (enhamemail@gmail.com)
+[debug] [2022-06-18T19:59:32.381Z] [iam] checking project oreon-choco-site for permissions ["firebase.projects.get"]
+[debug] [2022-06-18T19:59:32.382Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions [none]
+[debug] [2022-06-18T19:59:32.382Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-18T19:59:33.314Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions 200
+[debug] [2022-06-18T19:59:33.314Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-18T19:59:33.315Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-06-18T19:59:33.316Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-06-18T19:59:34.319Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com 200
+[debug] [2022-06-18T19:59:34.319Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2022-06-18T19:59:34.320Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2022-06-18T19:59:34.321Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/runtimeconfig.googleapis.com 200
+[debug] [2022-06-18T19:59:34.322Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-06-18T19:59:35.768Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2022-06-18T19:59:35.769Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2022-06-18T19:59:45.771Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-06-18T19:59:46.831Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com 200
+[debug] [2022-06-18T19:59:46.831Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/tsconfig.json 
+[info] ✔  Wrote functions/src/index.ts 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-06-18T20:00:58.364Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-06-18T20:00:58.526Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-06-18T20:00:58.526Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.3","browserURL":"https://www.gstatic.com/firebasejs/9.8.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.3/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.3/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.3/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.3/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.3/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.3/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.3/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.3/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.memory.js"}}
+[info] ✔  Wrote dist/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/mikhailkuznetsov/oreon-choko-site 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=129477555&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-06-18T20:00:59.108Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-06-18T20:00:59.108Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-06-18T20:00:59.509Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-06-18T20:00:59.510Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-06-18T20:00:59.515Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-06-18T20:00:59.906Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-06-18T20:00:59.906Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Enhame","id":7684053,"node_id":"MDQ6VXNlcjc2ODQwNTM=","avatar_url":"https://avatars.githubusercontent.com/u/7684053?v=4","gravatar_id":"","url":"https://api.github.com/users/Enhame","html_url":"https://github.com/Enhame","followers_url":"https://api.github.com/users/Enhame/followers","following_url":"https://api.github.com/users/Enhame/following{/other_user}","gists_url":"https://api.github.com/users/Enhame/gists{/gist_id}","starred_url":"https://api.github.com/users/Enhame/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Enhame/subscriptions","organizations_url":"https://api.github.com/users/Enhame/orgs","repos_url":"https://api.github.com/users/Enhame/repos","events_url":"https://api.github.com/users/Enhame/events{/privacy}","received_events_url":"https://api.github.com/users/Enhame/received_events","type":"User","site_admin":false,"name":null,"company":"Grid Dynamics","blog":"","location":"Saratov","email":"enhame@inbox.ru","hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":1,"following":1,"created_at":"2014-05-23T21:01:31Z","updated_at":"2022-05-26T12:09:07Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":2452,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as Enhame 
+[info] 
+[debug] [2022-06-18T20:01:45.569Z] >>> [apiv2][query] GET https://api.github.com/repos/Enhame/actions/secrets/public-key type=owner
+[debug] [2022-06-18T20:01:45.570Z] >>> [apiv2][query] GET https://api.github.com/repos///actions/secrets/public-key type=owner
+[debug] [2022-06-18T20:01:45.872Z] <<< [apiv2][status] GET https://api.github.com/repos///actions/secrets/public-key 404
+[debug] [2022-06-18T20:01:45.872Z] <<< [apiv2][body] GET https://api.github.com/repos///actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-06-18T20:01:45.887Z] <<< [apiv2][status] GET https://api.github.com/repos/Enhame/actions/secrets/public-key 404
+[debug] [2022-06-18T20:01:45.887Z] <<< [apiv2][body] GET https://api.github.com/repos/Enhame/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-06-18T20:01:58.109Z] ----------------------------------------------------------------------
+[debug] [2022-06-18T20:01:58.111Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-06-18T20:01:58.111Z] CLI Version:   11.1.0
+[debug] [2022-06-18T20:01:58.111Z] Platform:      darwin
+[debug] [2022-06-18T20:01:58.111Z] Node Version:  v16.15.0
+[debug] [2022-06-18T20:01:58.112Z] Time:          Sun Jun 19 2022 00:01:58 GMT+0400 (GMT+04:00)
+[debug] [2022-06-18T20:01:58.113Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-18T20:01:58.118Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-18T20:01:58.118Z] > authorizing via signed-in user (enhamemail@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mikhailkuznetsov/oreon-choko-site/oreon-choco-site
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-06-18T20:02:03.914Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-06-18T20:02:04.478Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-06-18T20:02:04.478Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project oreon-choco-site (oreon-choco-site) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-06-18T20:02:05.875Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-06-18T20:02:06.871Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firebasedatabase.googleapis.com 200
+[debug] [2022-06-18T20:02:06.871Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firebasedatabase.googleapis.com [omitted]
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-06-18T20:02:06.873Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/oreon-choco-site/locations/-/instances/oreon-choco-site-default-rtdb [none]
+[debug] [2022-06-18T20:02:07.326Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/oreon-choco-site/locations/-/instances/oreon-choco-site-default-rtdb 200
+[debug] [2022-06-18T20:02:07.327Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/oreon-choco-site/locations/-/instances/oreon-choco-site-default-rtdb {"name":"projects/1045344715860/locations/europe-west1/instances/oreon-choco-site-default-rtdb","project":"projects/1045344715860","databaseUrl":"https://oreon-choco-site-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-06-18T20:02:14.229Z] >>> [apiv2][query] GET https://oreon-choco-site-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2022-06-18T20:02:14.552Z] <<< [apiv2][status] GET https://oreon-choco-site-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2022-06-18T20:02:14.552Z] <<< [apiv2][body] GET https://oreon-choco-site-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] ✔  Database Rules for oreon-choco-site-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2022-06-18T20:02:14.555Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firestore.googleapis.com [none]
+[debug] [2022-06-18T20:02:15.558Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firestore.googleapis.com 200
+[debug] [2022-06-18T20:02:15.558Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/firestore.googleapis.com [omitted]
+[debug] [2022-06-18T20:02:15.559Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/oreon-choco-site [none]
+[debug] [2022-06-18T20:02:15.921Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/oreon-choco-site 200
+[debug] [2022-06-18T20:02:15.921Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/oreon-choco-site {"name":"apps/oreon-choco-site","id":"oreon-choco-site","authDomain":"gmail.com","locationId":"europe-west3","codeBucket":"staging.oreon-choco-site.appspot.com","servingStatus":"SERVING","defaultHostname":"oreon-choco-site.ey.r.appspot.com","defaultBucket":"oreon-choco-site.appspot.com","serviceAccount":"oreon-choco-site@appspot.gserviceaccount.com","gcrDomain":"eu.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-06-18T20:02:15.922Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-06-18T20:02:15.922Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-18T20:02:15.922Z] > authorizing via signed-in user (enhamemail@gmail.com)
+[debug] [2022-06-18T20:02:15.922Z] [iam] checking project oreon-choco-site for permissions ["firebase.projects.get"]
+[debug] [2022-06-18T20:02:15.923Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions [none]
+[debug] [2022-06-18T20:02:15.923Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-18T20:02:16.760Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions 200
+[debug] [2022-06-18T20:02:16.761Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-06-18T20:02:22.229Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/releases pageSize=10&pageToken=
+[debug] [2022-06-18T20:02:23.151Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/releases 200
+[debug] [2022-06-18T20:02:23.151Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/releases {"releases":[{"name":"projects/oreon-choco-site/releases/cloud.firestore","rulesetName":"projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc","createTime":"2022-06-18T19:58:45.914666Z","updateTime":"2022-06-18T19:58:45.914666Z"}]}
+[debug] [2022-06-18T20:02:23.152Z] Found ruleset: projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc
+[debug] [2022-06-18T20:02:23.152Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc [none]
+[debug] [2022-06-18T20:02:24.071Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc 200
+[debug] [2022-06-18T20:02:24.071Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/oreon-choco-site/rulesets/2c31e77e-bd53-45af-a8cf-de1815722ffc [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-06-18T20:02:29.228Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-06-18T20:02:29.230Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false [none]
+[debug] [2022-06-18T20:02:29.548Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-06-18T20:02:29.548Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2022-06-18T20:02:29.550Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false 200
+[debug] [2022-06-18T20:02:29.551Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/oreon-choco-site/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false {"fields":[{"name":"projects/oreon-choco-site/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2022-06-18T20:02:29.552Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-18T20:02:29.552Z] > authorizing via signed-in user (enhamemail@gmail.com)
+[debug] [2022-06-18T20:02:29.552Z] [iam] checking project oreon-choco-site for permissions ["firebase.projects.get"]
+[debug] [2022-06-18T20:02:29.552Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions [none]
+[debug] [2022-06-18T20:02:29.553Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-18T20:02:30.402Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions 200
+[debug] [2022-06-18T20:02:30.402Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-18T20:02:30.403Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-06-18T20:02:30.404Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-06-18T20:02:31.385Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/runtimeconfig.googleapis.com 200
+[debug] [2022-06-18T20:02:31.385Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-06-18T20:02:31.396Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com 200
+[debug] [2022-06-18T20:02:31.396Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oreon-choco-site/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/tsconfig.json 
+[info] ✔  Wrote functions/src/index.ts 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-06-18T20:03:08.604Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-06-18T20:03:08.753Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-06-18T20:03:08.754Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.3","browserURL":"https://www.gstatic.com/firebasejs/9.8.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.3/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.3/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.3/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.3/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.3/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.3/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.3/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.3/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.memory.js"}}
+[info] ✔  Wrote dist/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/mikhailkuznetsov/oreon-choko-site 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=59859802&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-06-18T20:03:14.012Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-06-18T20:03:14.012Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-06-18T20:03:14.395Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-06-18T20:03:14.395Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-06-18T20:03:14.397Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-06-18T20:03:14.775Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-06-18T20:03:14.775Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Enhame","id":7684053,"node_id":"MDQ6VXNlcjc2ODQwNTM=","avatar_url":"https://avatars.githubusercontent.com/u/7684053?v=4","gravatar_id":"","url":"https://api.github.com/users/Enhame","html_url":"https://github.com/Enhame","followers_url":"https://api.github.com/users/Enhame/followers","following_url":"https://api.github.com/users/Enhame/following{/other_user}","gists_url":"https://api.github.com/users/Enhame/gists{/gist_id}","starred_url":"https://api.github.com/users/Enhame/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Enhame/subscriptions","organizations_url":"https://api.github.com/users/Enhame/orgs","repos_url":"https://api.github.com/users/Enhame/repos","events_url":"https://api.github.com/users/Enhame/events{/privacy}","received_events_url":"https://api.github.com/users/Enhame/received_events","type":"User","site_admin":false,"name":null,"company":"Grid Dynamics","blog":"","location":"Saratov","email":"enhame@inbox.ru","hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":1,"following":1,"created_at":"2014-05-23T21:01:31Z","updated_at":"2022-05-26T12:09:07Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":2452,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as Enhame 
+[info] 
+[debug] [2022-06-18T20:03:38.831Z] >>> [apiv2][query] GET https://api.github.com/repos/Enhame/oreon-choko-site/actions/secrets/public-key type=owner
+[debug] [2022-06-18T20:03:39.166Z] <<< [apiv2][status] GET https://api.github.com/repos/Enhame/oreon-choko-site/actions/secrets/public-key 200
+[debug] [2022-06-18T20:03:39.167Z] <<< [apiv2][body] GET https://api.github.com/repos/Enhame/oreon-choko-site/actions/secrets/public-key {"key_id":"568250167242549743","key":"j7C2gmxw3Xden7czndLzvm161T4fstbi2xb/wS3dYWA="}
+[debug] [2022-06-18T20:03:39.167Z] >>> [apiv2][query] GET https://api.github.com/repos/Enhame/oreon-choko-site [none]
+[debug] [2022-06-18T20:03:39.515Z] <<< [apiv2][status] GET https://api.github.com/repos/Enhame/oreon-choko-site 200
+[debug] [2022-06-18T20:03:39.515Z] <<< [apiv2][body] GET https://api.github.com/repos/Enhame/oreon-choko-site {"id":504925899,"node_id":"R_kgDOHhiOyw","name":"oreon-choko-site","full_name":"Enhame/oreon-choko-site","private":false,"owner":{"login":"Enhame","id":7684053,"node_id":"MDQ6VXNlcjc2ODQwNTM=","avatar_url":"https://avatars.githubusercontent.com/u/7684053?v=4","gravatar_id":"","url":"https://api.github.com/users/Enhame","html_url":"https://github.com/Enhame","followers_url":"https://api.github.com/users/Enhame/followers","following_url":"https://api.github.com/users/Enhame/following{/other_user}","gists_url":"https://api.github.com/users/Enhame/gists{/gist_id}","starred_url":"https://api.github.com/users/Enhame/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Enhame/subscriptions","organizations_url":"https://api.github.com/users/Enhame/orgs","repos_url":"https://api.github.com/users/Enhame/repos","events_url":"https://api.github.com/users/Enhame/events{/privacy}","received_events_url":"https://api.github.com/users/Enhame/received_events","type":"User","site_admin":false},"html_url":"https://github.com/Enhame/oreon-choko-site","description":null,"fork":false,"url":"https://api.github.com/repos/Enhame/oreon-choko-site","forks_url":"https://api.github.com/repos/Enhame/oreon-choko-site/forks","keys_url":"https://api.github.com/repos/Enhame/oreon-choko-site/keys{/key_id}","collaborators_url":"https://api.github.com/repos/Enhame/oreon-choko-site/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/Enhame/oreon-choko-site/teams","hooks_url":"https://api.github.com/repos/Enhame/oreon-choko-site/hooks","issue_events_url":"https://api.github.com/repos/Enhame/oreon-choko-site/issues/events{/number}","events_url":"https://api.github.com/repos/Enhame/oreon-choko-site/events","assignees_url":"https://api.github.com/repos/Enhame/oreon-choko-site/assignees{/user}","branches_url":"https://api.github.com/repos/Enhame/oreon-choko-site/branches{/branch}","tags_url":"https://api.github.com/repos/Enhame/oreon-choko-site/tags","blobs_url":"https://api.github.com/repos/Enhame/oreon-choko-site/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/Enhame/oreon-choko-site/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/Enhame/oreon-choko-site/git/refs{/sha}","trees_url":"https://api.github.com/repos/Enhame/oreon-choko-site/git/trees{/sha}","statuses_url":"https://api.github.com/repos/Enhame/oreon-choko-site/statuses/{sha}","languages_url":"https://api.github.com/repos/Enhame/oreon-choko-site/languages","stargazers_url":"https://api.github.com/repos/Enhame/oreon-choko-site/stargazers","contributors_url":"https://api.github.com/repos/Enhame/oreon-choko-site/contributors","subscribers_url":"https://api.github.com/repos/Enhame/oreon-choko-site/subscribers","subscription_url":"https://api.github.com/repos/Enhame/oreon-choko-site/subscription","commits_url":"https://api.github.com/repos/Enhame/oreon-choko-site/commits{/sha}","git_commits_url":"https://api.github.com/repos/Enhame/oreon-choko-site/git/commits{/sha}","comments_url":"https://api.github.com/repos/Enhame/oreon-choko-site/comments{/number}","issue_comment_url":"https://api.github.com/repos/Enhame/oreon-choko-site/issues/comments{/number}","contents_url":"https://api.github.com/repos/Enhame/oreon-choko-site/contents/{+path}","compare_url":"https://api.github.com/repos/Enhame/oreon-choko-site/compare/{base}...{head}","merges_url":"https://api.github.com/repos/Enhame/oreon-choko-site/merges","archive_url":"https://api.github.com/repos/Enhame/oreon-choko-site/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/Enhame/oreon-choko-site/downloads","issues_url":"https://api.github.com/repos/Enhame/oreon-choko-site/issues{/number}","pulls_url":"https://api.github.com/repos/Enhame/oreon-choko-site/pulls{/number}","milestones_url":"https://api.github.com/repos/Enhame/oreon-choko-site/milestones{/number}","notifications_url":"https://api.github.com/repos/Enhame/oreon-choko-site/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/Enhame/oreon-choko-site/labels{/name}","releases_url":"https://api.github.com/repos/Enhame/oreon-choko-site/releases{/id}","deployments_url":"https://api.github.com/repos/Enhame/oreon-choko-site/deployments","created_at":"2022-06-18T18:51:04Z","updated_at":"2022-06-18T18:51:04Z","pushed_at":"2022-06-18T18:51:04Z","git_url":"git://github.com/Enhame/oreon-choko-site.git","ssh_url":"git@github.com:Enhame/oreon-choko-site.git","clone_url":"https://github.com/Enhame/oreon-choko-site.git","svn_url":"https://github.com/Enhame/oreon-choko-site","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"network_count":0,"subscribers_count":1}
+[debug] [2022-06-18T20:03:39.516Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts [none]
+[debug] [2022-06-18T20:03:39.517Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts {"accountId":"github-action-504925899","serviceAccount":{"displayName":"GitHub Actions (Enhame/oreon-choko-site)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository Enhame/oreon-choko-site"}}
+[debug] [2022-06-18T20:03:40.828Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts 200
+[debug] [2022-06-18T20:03:40.829Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts [omitted]
+[debug] [2022-06-18T20:03:40.829Z] >>> [apiv2][query] GET https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts/github-action-504925899@oreon-choco-site.iam.gserviceaccount.com [none]
+[debug] [2022-06-18T20:03:40.831Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:getIamPolicy [none]
+[debug] [2022-06-18T20:03:41.651Z] <<< [apiv2][status] GET https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts/github-action-504925899@oreon-choco-site.iam.gserviceaccount.com 200
+[debug] [2022-06-18T20:03:41.651Z] <<< [apiv2][body] GET https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts/github-action-504925899@oreon-choco-site.iam.gserviceaccount.com {"name":"projects/oreon-choco-site/serviceAccounts/github-action-504925899@oreon-choco-site.iam.gserviceaccount.com","projectId":"oreon-choco-site","uniqueId":"107273924873518797383","email":"github-action-504925899@oreon-choco-site.iam.gserviceaccount.com","displayName":"GitHub Actions (Enhame/oreon-choko-site)","etag":"MDEwMjE5MjA=","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository Enhame/oreon-choko-site","oauth2ClientId":"107273924873518797383"}
+[debug] [2022-06-18T20:03:41.813Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:getIamPolicy 200
+[debug] [2022-06-18T20:03:41.814Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:getIamPolicy {"version":1,"etag":"BwXhvk95IZg=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-1045344715860@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:oreon-choco-site@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-7z3gd@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-1045344715860@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-1045344715860@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-7z3gd@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:enhamemail@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-1045344715860@gcp-sa-pubsub.iam.gserviceaccount.com"]}]}
+[debug] [2022-06-18T20:03:41.814Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:setIamPolicy [none]
+[debug] [2022-06-18T20:03:41.815Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:setIamPolicy {"policy":{"version":1,"etag":"BwXhvk95IZg=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-1045344715860@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:oreon-choco-site@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-7z3gd@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-1045344715860@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-1045344715860@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-7z3gd@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:enhamemail@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-1045344715860@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-504925899@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-504925899@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-504925899@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-504925899@oreon-choco-site.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2022-06-18T20:03:43.261Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:setIamPolicy 200
+[debug] [2022-06-18T20:03:43.261Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oreon-choco-site:setIamPolicy {"version":1,"etag":"BwXhvl4ocsM=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-1045344715860@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:oreon-choco-site@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-7z3gd@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-504925899@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-504925899@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-1045344715860@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-1045344715860@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-7z3gd@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:enhamemail@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-1045344715860@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-504925899@oreon-choco-site.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-504925899@oreon-choco-site.iam.gserviceaccount.com"]}]}
+[debug] [2022-06-18T20:03:43.261Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts/github-action-504925899@oreon-choco-site.iam.gserviceaccount.com/keys [none]
+[debug] [2022-06-18T20:03:43.261Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts/github-action-504925899@oreon-choco-site.iam.gserviceaccount.com/keys {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2022-06-18T20:03:44.410Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts/github-action-504925899@oreon-choco-site.iam.gserviceaccount.com/keys 200
+[debug] [2022-06-18T20:03:44.410Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/oreon-choco-site/serviceAccounts/github-action-504925899@oreon-choco-site.iam.gserviceaccount.com/keys {"name":"projects/oreon-choco-site/serviceAccounts/github-action-504925899@oreon-choco-site.iam.gserviceaccount.com/keys/614d30924af8e0c2671106471267d43475355b29","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE","privateKeyData":"ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAib3Jlb24tY2hvY28tc2l0ZSIsCiAgInByaXZhdGVfa2V5X2lkIjogIjYxNGQzMDkyNGFmOGUwYzI2NzExMDY0NzEyNjdkNDM0NzUzNTViMjkiLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2QUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktZd2dnU2lBZ0VBQW9JQkFRQ2xoL1BjZEs2bWR3OGZcbmliWDN6UVI4ekE5Mm1MblZmMHZqSUgzSEo2aThNV2VJeVJCL1ZLWjZjQTBzajZNMkptMXpuNVBZWE9Vai9Nc1FcbmkvNS9HdXdiL21pM05nWFJ0dFl3UFErcmF0d1Q4R1BWTnEycFo5N1c5aDEwbGJOaTkwUXZ5dW15WElnVmJjSGpcbkVadE1rb3V1TjRZN3lyTjdPenlmME9qTTFWcGlIelVuYkF1bkpSd0pJZHpsSTF0Q0dHRjVBb3N6Y2UyYmJJWGdcbkVMUnQvMGFQMW1iMUNNL0xsQWplWDNiNVUzcUtiay8zVXYxcUIyb1FqOXBmZlpwSFk3RnAxcjdXSlpJc3dRbFZcbmJZa0VnbG1uTkVNbjE2ZHdOOW41ZEl3d0FYZFpNcWErMnM0TUs5QkR5a2lGM2lxQ1JBR1crR20xb0xBeTNzZkNcbmsrZ2cybFo5QWdNQkFBRUNnZ0VBSnJ5dDBoZkJQbVlLMVRuVUtua2hOWFpJb1J1bEU0UWVkWGpIVG5tbXVHSEVcblphT045NHBQQ2tTYUpLVTVqK1RHeE9IaGhxYlluY2NkRzFKem5IbW5xdlpxdVlOTU1kTmNoUDNwSXBlWGlKZi9cbk9PaDZrL1FobDBNUnloUjFYakhZMUdsakxyRU9USnQ2bmVHakt2UjVlU3YzdnhyVXpVQWoxQStleHo2ZmorbjJcbnpKWS9NZDJsYThadEVoR2hwNHM3QUlmdWl2dEJkclhzZEF6b1lpV3doWUFXU2pxQUU4c0swUDJZVG1ER1E2VjJcbnpGMitBZ0xjOUorSlJKMXQrYTVVU3RPL3FoVFQ3dGNoNDlkb09SSmgvVTA1d1V3Z0RMR0hvbEZwalhvbE1MaGFcbmNxSDlxWXhrZWRsR0J6QlVzbyt6VWxraTRNeFludGhLWG9BUldmN3FpUUtCZ1FEVlp6cFEvd3RSUGpZdnZiU1hcbit5SWJnam8zVnNHeUVJNVdZRUpBMzZMSTJURWdLcVBXb0l3R3dJMDVIYmxTYVRka0M5bkQxYjAxUUU0c0xWT1NcbjV6c1orWkpScU5GSitHOSs2c1Y2b2JNd21TbHdvUnQ4bmNhRFV5U2U2K3FRbjZTK0lPbzlQWW53TzRYblBIcVdcbjZyVTJOZDBuWDBrdXFWZWN0Q2VCSVZnNXhRS0JnUURHa255ZkFqMW1UTmxYeGw2d1hNQkdMVGROZTZjNVdpbW9cbjJJbjJHVDdNSjI1aWFpYjVjRWk3ekFoQ2x5YkJORlhqNDhDNkZ5UGNmeWl3dGJGOGpBWW9FMkZURS9EZ2pxTXhcbm00NEEwTmMybEtGQjZVUHM0WjFIV0g5eFMvMWloZFZxQWtXU255cjdkUkNzdGJXZWlRN3h6YWVpYnc4UGFVbjlcbkdrOGswM1pOV1FLQmdHY1pQaFZQZ25vM29ob2lmcE5HWXM0RGRuaXgwMVpocFVLWnNxaUE0clpDSi9ld1lnTVpcbkFVMXB6VkNneVozRTgxdkVWZXJFNG1wTnJQYXUxMGVMcXdQN2pQTWlxaW9nZWsxSXd5dGgzNTVGQUw1SE4yNVhcbkUwYnk3aWhSTmJ1MVJQUU9GdHlMVkk3WlV2SEtTRGVOSVFzVnJzaU13bUJtczhzalJrcWVmMjg1QW9HQVdIaUZcbm01YTA0bkpVMTMyalRISlduQzJqR1J1Qm10VG9BTGxSWmx0REZsUnZJdHZtdDNYbWdmMWFwTWlSVkwxTGt6Z3lcbjh2WkNYUWd1aWVTNXlpTGN6MWdySVllZDUzN0ZpT0drZUFxVUNGWmFMbktPZCtqaFdSczkxSzJsbkJMQ3pmTnJcbktmTk9oREJaR0ludy9FeFdZemRjZTh0OWEwRmUzS3l2SEZvMnVDa0NnWUJzZXhzSEtvK2haRFF5a0tuUUVNWWdcblJDcmJqck1udkE1TkwwOHF0cllSWDQ0Qmw2V2prNXNhVXl5OHMzZlZMUHB0Q3VPZUd4ZEZ2VkpoWVNQcnNpSE5cbmx6cXNKcjdtQis3WmZUby9BTTZtQTdlMlRmdkZybWJrSDRpY0ViUXl6WGZJblAxa25TSmxlcHFHVG1nNERwVFRcbi94dU1PUVg4dEhPbm8ydmJ6WFpXa0E9PVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImdpdGh1Yi1hY3Rpb24tNTA0OTI1ODk5QG9yZW9uLWNob2NvLXNpdGUuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTA3MjczOTI0ODczNTE4Nzk3MzgzIiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9naXRodWItYWN0aW9uLTUwNDkyNTg5OSU0MG9yZW9uLWNob2NvLXNpdGUuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iCn0K","validAfterTime":"2022-06-18T20:03:44Z","validBeforeTime":"9999-12-31T23:59:59Z","keyAlgorithm":"KEY_ALG_RSA_2048","keyOrigin":"GOOGLE_PROVIDED","keyType":"USER_MANAGED"}
+[info] 
+[info] ✔  Created service account github-action-504925899 with Firebase Hosting admin permissions. 
+[debug] [2022-06-18T20:03:44.412Z] >>> [apiv2][query] PUT https://api.github.com/repos/Enhame/oreon-choko-site/actions/secrets/FIREBASE_SERVICE_ACCOUNT_OREON_CHOCO_SITE [none]
+[debug] [2022-06-18T20:03:44.412Z] >>> [apiv2][body] PUT https://api.github.com/repos/Enhame/oreon-choko-site/actions/secrets/FIREBASE_SERVICE_ACCOUNT_OREON_CHOCO_SITE {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2022-06-18T20:03:44.854Z] <<< [apiv2][status] PUT https://api.github.com/repos/Enhame/oreon-choko-site/actions/secrets/FIREBASE_SERVICE_ACCOUNT_OREON_CHOCO_SITE 201
+[debug] [2022-06-18T20:03:44.854Z] <<< [apiv2][body] PUT https://api.github.com/repos/Enhame/oreon-choko-site/actions/secrets/FIREBASE_SERVICE_ACCOUNT_OREON_CHOCO_SITE {}
+[info] ✔  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_OREON_CHOCO_SITE. 
+[info] i  You can manage your secrets at https://github.com/Enhame/oreon-choko-site/settings/secrets. 
+[info] 
+[info] 
+[info] ✔  Created workflow file /Users/mikhailkuznetsov/oreon-choko-site/.github/workflows/firebase-hosting-pull-request.yml 

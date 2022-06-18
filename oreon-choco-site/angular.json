@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "projects": {
+    "oreon-choco-site": "apps/oreon-choco-site"
+  }
+}
