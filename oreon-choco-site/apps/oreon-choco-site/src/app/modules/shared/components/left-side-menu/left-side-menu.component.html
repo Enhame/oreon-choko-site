@@ -1,0 +1,7 @@
+<div class="ocs-left-menu">
+  <div class="links-list">
+    <div class="" *ngFor="let item of ['kek', 'sweets', 'another_one']">
+      <button color="primary" [routerLink]="'/category/' + item" [routerLinkActive]="'mat-raised-button'" mat-button>{{item}}</button>
+    </div>
+  </div>
+</div>

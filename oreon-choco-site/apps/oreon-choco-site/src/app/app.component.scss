@@ -1,0 +1,99 @@
+@import "../styles/mixins";
+@import "../styles/colors";
+
+.ocs-content {
+  mat-drawer-container {
+    position: static;
+  }
+
+  mat-drawer {
+    width: 100%;
+
+    .close-btn-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    @include screen(500px) {
+      width: 400px;
+    }
+  }
+
+  .ocs-left-menu {
+    margin-top: 40px;
+  }
+
+  .main, .heading, .footer {
+    z-index: 2;
+  }
+
+  .main {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.05;
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjZmZmZmZmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY3MzlCNiIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY3MzlCNiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+Cjwvc3ZnPg==");
+    }
+
+    .heading {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 65px;
+      font-size: 50px;
+      color: #ffffff;
+      text-align: center;
+
+      mat-icon {
+        margin-right: 20px;
+      }
+
+      mat-toolbar {
+        font-family: Cormorant;
+      }
+    }
+
+    .content {
+      position: absolute;
+      top: 65px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      overflow: scroll;
+      background-color: #ffffff;
+      z-index: 2;
+
+      //@media screen and (min-width: 800px) {
+      //  width: 800px;
+      //  margin: auto;
+      //}
+      @include screen(800px) {
+        width: 800px;
+        margin: auto;
+      }
+
+      .mat-tab-links {
+        justify-content: center;
+      }
+
+      .mat-ink-bar {
+        transition: 200ms cubic-bezier(0.35, 0, 0.25, 1);
+      }
+    }
+  }
+}
+

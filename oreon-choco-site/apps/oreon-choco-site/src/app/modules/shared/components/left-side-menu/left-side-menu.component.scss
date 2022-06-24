@@ -1,0 +1,9 @@
+@import "../../../../../styles/sizes";
+
+.ocs-left-menu {
+  button[mat-button] {
+    width: 100%;
+    height: 60px;
+    border-radius: 0;
+  }
+}

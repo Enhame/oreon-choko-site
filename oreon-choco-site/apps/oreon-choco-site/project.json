@@ -22,6 +22,7 @@
           "apps/oreon-choco-site/src/assets"
         ],
         "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
           "apps/oreon-choco-site/src/styles.scss"
         ],
         "scripts": []
@@ -90,6 +91,7 @@
           "apps/oreon-choco-site/src/assets"
         ],
         "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
           "apps/oreon-choco-site/src/styles.scss"
         ],
         "scripts": []
